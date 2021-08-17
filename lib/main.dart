@@ -72,14 +72,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: const EdgeInsets.only(top: 16.0),
                 child: ElevatedButton(
                   style: ButtonStyle(
-                      backgroundColor:
-                          MaterialStateProperty.all(Colors.tealAccent[200]),
-                      foregroundColor:
-                          MaterialStateProperty.all(Colors.grey[700]),
-                      shape: MaterialStateProperty.all(
-                        RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12.0)),
-                      )),
+                    backgroundColor: MaterialStateProperty.all(
+                      Colors.tealAccent[200],
+                    ),
+                    foregroundColor: MaterialStateProperty.all(
+                      Colors.grey[700],
+                    ),
+                    shape: MaterialStateProperty.all(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12.0),
+                      ),
+                    ),
+                  ),
                   onPressed: () {
                     setState(() {
                       if (textToBeDisplayed == 'Your text goes here...') return;
@@ -88,8 +92,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   },
                   child: Text(
                     'Display Text',
-                    style:
-                        TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18.0,
+                    ),
                   ),
                 ),
               ),
