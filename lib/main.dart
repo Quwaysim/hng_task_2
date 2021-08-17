@@ -40,6 +40,11 @@ class _MyHomePageState extends State<MyHomePage> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: <Widget>[
+            Expanded(child: Image.asset('images/hng.png')),
+            SizedBox(height: 10),
+            Expanded(
+              child: Text('learn more at: https://internship.zuri.team'),
+            ),
             Expanded(
               flex: 5,
               child: Text(
